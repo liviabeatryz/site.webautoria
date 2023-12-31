@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B Luxe :: Página Principal</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="d-flex flex-column wrapper">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black border-bottom shadow-sm mb-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="/"><b>B Luxe</b></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Principal</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/contato.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/ofertas.html">Ofertas</a>
+              </li>
+            </ul>
+            <div class="align-self-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="/cadastro.html"
+                    >Cadastre-se</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="/login.html"
+                    >Entrar</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <span
+                    class="badge rounded-pill bg-light text-black position-absolute ms-4 mt-0"
+                    title="5 produto(s) no carrinho"
+                    ><small>5</small></span
+                  >
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="/carrinho.html"
+                  >
+                    <i
+                      class="bi-cart"
+                      style="font-size: 24px; line-height: 24px"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div id="carouselMain" class="carousel slide" data-bs-ride="true">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselMain"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselMain"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselMain"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3000">
+              <img
+                src="/img/clothes/logo.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="/img/clothes/SLIDE 2.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+              <img
+                src="/img/clothes/SLIDE 3.png"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselMain"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselMain"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
+        <hr class="mt-3" />
+      </div>
+
+      <main class="flex-fill">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-md-5">
+              <form
+                class="justify-content-center justify-content-md-start mb-3 mb-md-0"
+              >
+                <div class="input-group input-group-sm">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="O que você está procurando?"
+                  />
+                  <button
+                    class="btn btn-dark"
+                    type="button"
+                    id="button-addon2"
+                  >
+                    Buscar
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="col-12 col-md-7">
+              <div
+                class="d-flex flex-row-reverse justify-content-center justify-content-md-start"
+              >
+                <form class="d-inline-block">
+                  <select class="form-select form-select-sm">
+                    <option>Ordenar pelo menor preço</option>
+                    <option>Ordenar pelo maior preço</option>
+                  </select>
+                </form>
+
+                <nav class="d-inline-block me-3">
+                  <ul class="pagination pagination-sm my-0">
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">6</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+
+          <hr class="mt-3" />
+
+          <div class="row g-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+              
+                <img
+                  src="img/clothes/camisa social.vermelha.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$ 149,90</div>
+                <div class="card-body">
+                  <h5 class="card-title">Camisa Masculina Social</h5>
+                  <p class="card-text truncar">
+                    A Camisa Masculina Social é produzida em mix
+                    de fibras, sendo muito macia e confortável.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">55 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  src="/img/clothes/camisa básica.rosa.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$ 89,90</div>
+                <div class="card-body">
+                  <h5 class="card-title">Camisa Masculina</h5>
+                  <p class="card-text truncar">
+                    A Camiseta Masculina Manga Curta Rosa é produzida em mix
+                    de fibras, sendo muito macia e confortável.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">6 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart-fill"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  src="img/clothes/camisa gola polo.verde.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$ 95,00</div>
+                <div class="card-body">
+                  <h5 class="card-title">Camisa Gola Polo</h5>
+                  <p class="card-text truncar">
+                    A Camisa Masculina Gola Polo é produzida em mix
+                    de fibras, sendo muito macia e confortável.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="#" class="btn btn-light disabled mt-2 d-block"
+                    >Temporariamente Esgotado</a
+                  >
+                </div>
+                <small class="text-danger"><b>0 em estoque</b></small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  src="/img/clothes/Camisa gola polo.vinho.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$ 93,90</div>
+                <div class="card-body">
+                  <h5 class="card-title">Camisa Gola Polo</h5>
+                  <p class="card-text truncar">
+                    A Camisa Masculina Gola Polo é produzida em mix
+                    de fibras, sendo muito macia e confortável.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">88 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  src="img/clothes/camisa social manda curta.listrada.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$89,90</div>
+                <div class="card-body">
+                  <h5 class="card-title">Camisa Social Manga Curta</h5>
+                  <p class="card-text truncar">
+                    A Camisa Social Manga Curta é produzida em mix
+                    de fibras, sendo muito macia e confortável.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">14 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart-fill"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  src="img/clothes/camisa social manga curta.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$79,90</div>
+                <div class="card-body">
+                  <h5 class="card-title">Camisa Social Manga Curta</h5>
+                  <p class="card-text truncar">
+                    A Camisa Social Manga Curta é produzida em mix
+                    de fibras, sendo muito macia e confortável.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">31 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  src="img/clothes/camisa social.azul.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$ 129,90</div>
+                <div class="card-body">
+                  <h5 class="card-title">Camisa Masculina Social </h5>
+                  <p class="card-text truncar">
+                    A Camisa Masculina Social é produzida em mix
+                    de fibras, sendo muito macia e confortável.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">27 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i class="bi-suit-heart" style="font-size: 34px; line-height: 24px"></i>
+                </a>
+                <img src="img/clothes/Camisa básica.prada.PNG" class="card-img-top" alt="..." />
+                <div class="card-header">R$ 79,90</div>
+                <div class="card-body">
+                  <h5 class="card-title">Camisa Masculina</h5>
+                  <p class="card-text truncar">
+                    A Camisa Masculina é produzida em mix de fibras, sendo muito macia e confortável.
+                  </p>
+                </div> 
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block">Adicionar ao Carrinho</a>
+                </div>
+                <small class="text-success">24 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  src="img/clothes/calça jeans.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$ 130,00</div>
+                <div class="card-body">
+                  <h5 class="card-title">Calça Jeans</h5>
+                  <p class="card-text truncar">
+                    A Calça Jeans é confeccionada em algodão
+                    e elastano, possui cós com zíper e botão.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">5 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  src="img/clothes/calça social.bege.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$ 200,00</div>
+                <div class="card-body">
+                  <h5 class="card-title">Calça Social</h5>
+                  <p class="card-text truncar">
+                    A Calça Social é confeccionada em polieste
+                    e viscose, possui cós com zíper e botão.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">83 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  style="height: 300px"
+                  src="img/clothes/bermuda.linho bege.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$ 85,00</div>
+                <div class="card-body">
+                  <h5 class="card-title">Bermuda Linho</h5>
+                  <p class="card-text truncar">
+                    A Bermuda Linho é feita em tecido leve mix de linho com
+                    viscose. Uma peça super confortável.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">14 em estoque</small>
+              </div>
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+              <div class="card text-center bg-light">
+                <a href="#" class="position-absolute end-0 p-4 text-danger">
+                  <i
+                    class="bi-suit-heart"
+                    style="font-size: 34px; line-height: 24px"
+                  ></i>
+                </a>
+                <img
+                  style="height: 300px"
+                  src="img/clothes/bermuda.linho verde.PNG"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-header">R$ 87,00</div>
+                <div class="card-body">
+                  <h5 class="card-title">Bermuda Linho</h5>
+                  <p class="card-text truncar">
+                    A Bermuda Linho é feita em tecido leve mix de linho com
+                    viscose. Uma peça super confortável.
+                  </p>
+                </div>
+                <div class="card-footer">
+                  <a href="produto.html" class="btn btn-danger mt-2 d-block"
+                    >Adicionar ao Carrinho</a
+                  >
+                </div>
+                <small class="text-success">9 em estoque</small>
+              </div>
+            </div>
+          </div>
+          <hr class="mt-3" />
+
+          <div class="row pb-4">
+            <div class="col-12">
+              <div
+                class="d-flex flex-row-reverse justify-content-center justify-content-md-start"
+              >
+                <form class="d-inline-block">
+                  <select class="form-select form-select-sm">
+                    
+                    <option>Ordenar pelo menor preço</option>
+                    <option>Ordenar pelo maior preço</option>
+                  </select>
+                </form>
+
+                <nav class="d-inline-block me-3">
+                  <ul class="pagination pagination-sm my-0">
+                    <li class="page-item">
+                      <a class="page-link" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">2</a>
+                    </li>
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#">3</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">4</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">5</a>
+                    </li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">6</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="border-top text-muted bg-light">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12 col-md-4 text-center">
+              &copy; 2023 - B Luxe Ltda<br />
+              Shopping MM, Piso 2, Natal - RN <br />
+              CNPJ 00.000.000/0001-00
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <a href="privacidade.html" class="text-decoration-none text-dark">
+                Politica de Privacidade </a
+              ><br />
+              <a href="termos.html" class="text-decoration-none text-dark">
+                Termos de Uso </a
+              ><br />
+              <a href="quemsomos.html" class="text-decoration-none text-dark">
+                Quem Somos </a
+              ><br />
+              <a href="trocas.html" class="text-decoration-none text-dark">
+                Trocas e Devoluções </a
+              ><br />
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <a href="contato.html" class="text-decoration-none text-dark">
+                Contato Pelo Site </a
+              ><br />
+              E-mail:
+              <a
+                href="mailto:bluxe@sac.com"
+                class="text-decoration-none text-dark"
+              >
+                bluxe@sac.com</a
+              ><br />
+              Telefone:
+              <a href="phone:34332064" class="text-decoration-none text-dark">
+                (84) 3433-2064
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

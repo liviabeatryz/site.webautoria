@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>B Luxe :: Área do Cliente :: Pedidos</title>
+    
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+  </head>
+  <body>
+    <div class="d-flex flex-column wrapper">
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-black border-bottom shadow-sm mb-3"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="/"><b>B Luxe</b></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target=".navbar-collapse"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav flex-grow-1">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Principal</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/contato.html">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/ofertas.html">Ofertas</a>
+              </li>
+            </ul>
+            <div class="align-self-end">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="/cliente_pedidos.html"
+                    >Logado como <b>Lívia Beatriz</b></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="/login.html"
+                    >Sair</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <span
+                    class="badge rounded-pill bg-light text-black position-absolute ms-4 mt-0"
+                    title="5 produto(s) no carrinho"
+                    ><small>5</small></span
+                  >
+                  <a
+                    class="nav-link text-white active"
+                    aria-current="page"
+                    href="/carrinho.html"
+                  >
+                    <i
+                      class="bi-cart"
+                      style="font-size: 24px; line-height: 24px"
+                    ></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <main class="flex-fill">
+        <div class="container">
+          <h1>Minha Conta</h1>
+          <div class="row gx-3">
+            <div class="col-4">
+              <div class="list-group">
+                <a
+                  href="/cliente_dados.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-person fs-6"></i> Dados Pessoais
+                </a>
+
+                <a
+                  href="/cliente_contatos.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-mailbox fs-6"></i> Contatos
+                </a>
+
+                <a
+                  href="/cliente_endereco.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-house-door fs-6"></i> Endereço
+                </a>
+
+                <a
+                  href="/cliente_pedidos.html"
+                  class="list-group-item list-group-item-action bg-black text-light"
+                >
+                  <i class="bi-truck fs-6"></i> Dados Pedidos
+                </a>
+
+                <a
+                  href="/cliente_favoritos.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-star fs-6"></i> Favoritos
+                </a>
+
+                <a
+                  href="/cliente_senha.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-lock fs-6"></i> Alterar Senha
+                </a>
+
+                <a
+                  href="/index.html"
+                  class="list-group-item list-group-item-action"
+                >
+                  <i class="bi-door-open fs-6"></i> Sair
+                </a>
+              </div>
+            </div>
+            <div class="col-8">
+              <form class="row mb-3">
+                <div class="col-12 col-md-6 mb-3">
+                  <div class="form-floating">
+                    <select class="form-select">
+                      <option value="30">Últimos 30 dias</option>
+                      <option value="60">Últimos 60 dias</option>
+                      <option value="90">Últimos 90 dias</option>
+                      <option value="120">Últimos 120 dias</option>
+                      <option value="365" selected>Últimos 365 dias</option>
+                      <option value="9999">Todo o Período</option>
+                    </select>
+                    <label>Período</label>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div class="form-floating">
+                    <select class="form-select">
+                      <option value="1" selected>Mais Novos Primeiro</option>
+                      <option value="2">Mais Antigos Primeiro</option>
+                    </select>
+                    <label>Ordenação</label>
+                  </div>
+                </div>
+              </form>
+
+              <div class="accordion" id="divPedidos">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#pedido000010"
+                    >
+                      <b>Pedido 000010</b>
+                      <span class="mx-1">(realizado em 29/12/2023)</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="pedido000010"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#divPedidos"
+                  >
+                    <div class="accordion-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Produto</th>
+                            <th class="text-end">R$ Unit.</th>
+                            <th class="text-center">Qtde.</th>
+                            <th class="text-end">Subtotal</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Camisa Masculina</td>
+                            <td class="text-end">30,00</td>
+                            <td class="text-center">2</td>
+                            <td class="text-end">60,00</td>
+                          </tr>
+
+                          <tr>
+                            <td>Camisa Polo Masculina</td>
+                            <td class="text-end">55,00</td>
+                            <td class="text-center">1</td>
+                            <td class="text-end">55,00</td>
+                          </tr>
+
+                          <tr>
+                            <td>Kit Cuecas</td>
+                            <td class="text-end">12,50</td>
+                            <td class="text-center">2</td>
+                            <td class="text-end">25,00</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor dos Produtos
+                            </th>
+                            <td class="text-end">140,00</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor do Frete
+                            </th>
+                            <td class="text-end">18,73</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor Total à Pagar
+                            </th>
+                            <td class="text-end">158,73</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Forma de Pagamento
+                            </th>
+                            <td class="text-end">Crédito Credicard 1x</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#pedido000011"
+                    >
+                      <b>Pedido 000011</b>
+                      <span class="mx-1">(realizado em 23/11/2023)</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="pedido000011"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#divPedidos"
+                  >
+                    <div class="accordion-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Produto</th>
+                            <th class="text-end">R$ Unit.</th>
+                            <th class="text-center">Qtde.</th>
+                            <th class="text-end">Subtotal</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Camisa Masculina</td>
+                            <td class="text-end">30,00</td>
+                            <td class="text-center">2</td>
+                            <td class="text-end">60,00</td>
+                          </tr>
+
+                          <tr>
+                            <td>Bermuda Jeans</td>
+                            <td class="text-end">55,00</td>
+                            <td class="text-center">1</td>
+                            <td class="text-end">55,00</td>
+                          </tr>
+
+                          <tr>
+                            <td>Kit Meias</td>
+                            <td class="text-end">12,50</td>
+                            <td class="text-center">2</td>
+                            <td class="text-end">25,00</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor dos Produtos
+                            </th>
+                            <td class="text-end">140,00</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor do Frete
+                            </th>
+                            <td class="text-end">18,73</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor Total à Pagar
+                            </th>
+                            <td class="text-end">158,73</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Forma de Pagamento
+                            </th>
+                            <td class="text-end">Crédito Credicard 1x</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#pedido000015"
+                    >
+                      <b>Pedido 000015</b>
+                      <span class="mx-1">(realizado em 02/04/2023)</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="pedido000015"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#divPedidos"
+                  >
+                    <div class="accordion-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Produto</th>
+                            <th class="text-end">R$ Unit.</th>
+                            <th class="text-center">Qtde.</th>
+                            <th class="text-end">Subtotal</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Camisa Masculina</td>
+                            <td class="text-end">30,00</td>
+                            <td class="text-center">2</td>
+                            <td class="text-end">60,00</td>
+                          </tr>
+
+                          <tr>
+                            <td>Bermuda Linho</td>
+                            <td class="text-end">55,00</td>
+                            <td class="text-center">1</td>
+                            <td class="text-end">55,00</td>
+                          </tr>
+
+                          <tr>
+                            <td>Kit Cuecas</td>
+                            <td class="text-end">12,50</td>
+                            <td class="text-center">2</td>
+                            <td class="text-end">25,00</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor dos Produtos
+                            </th>
+                            <td class="text-end">140,00</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor do Frete
+                            </th>
+                            <td class="text-end">18,73</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor Total à Pagar
+                            </th>
+                            <td class="text-end">158,73</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Forma de Pagamento
+                            </th>
+                            <td class="text-end">Crédito Credicard 1x</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#pedido000016"
+                    >
+                      <b>Pedido 000016</b>
+                      <span class="mx-1">(realizado em 16/01/2023)</span>
+                    </button>
+                  </h2>
+                  <div
+                    id="pedido000016"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#divPedidos"
+                  >
+                    <div class="accordion-body">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th>Produto</th>
+                            <th class="text-end">R$ Unit.</th>
+                            <th class="text-center">Qtde.</th>
+                            <th class="text-end">Subtotal</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Camisa Masculina</td>
+                            <td class="text-end">30,00</td>
+                            <td class="text-center">2</td>
+                            <td class="text-end">60,00</td>
+                          </tr>
+
+                          <tr>
+                            <td>Bermuda Moletom</td>
+                            <td class="text-end">55,00</td>
+                            <td class="text-center">1</td>
+                            <td class="text-end">55,00</td>
+                          </tr>
+
+                          <tr>
+                            <td>Kit Meias</td>
+                            <td class="text-end">12,50</td>
+                            <td class="text-center">2</td>
+                            <td class="text-end">25,00</td>
+                          </tr>
+                        </tbody>
+                        <tfoot>
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor dos Produtos
+                            </th>
+                            <td class="text-end">140,00</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor do Frete
+                            </th>
+                            <td class="text-end">18,73</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Valor Total à Pagar
+                            </th>
+                            <td class="text-end">158,73</td>
+                          </tr>
+
+                          <tr>
+                            <th class="text-end" colspan="3">
+                              Forma de Pagamento
+                            </th>
+                            <td class="text-end">Crédito Credicard 1x</td>
+                          </tr>
+                        </tfoot>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="border-top text-muted bg-light">
+        <div class="container">
+          <div class="row py-3">
+            <div class="col-12 col-md-4 text-center">
+              &copy; 2023 - B Luxe Ltda<br />
+              Shopping MM, Piso 2, Natal - RN <br />
+              CNPJ 00.000.000/0001-00
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <a href="privacidade.html" class="text-decoration-none text-dark">
+                Politica de Privacidade </a
+              ><br />
+              <a href="termos.html" class="text-decoration-none text-dark">
+                Termos de Uso </a
+              ><br />
+              <a href="quemsomos.html" class="text-decoration-none text-dark">
+                Quem Somos </a
+              ><br />
+              <a href="trocas.html" class="text-decoration-none text-dark">
+                Trocas e Devoluções </a
+              ><br />
+            </div>
+            <div class="col-12 col-md-4 text-center">
+              <a href="contato.html" class="text-decoration-none text-dark">
+                Contato Pelo Site </a
+              ><br />
+              E-mail:
+              <a
+                href="mailto:bluxeo@sac.com"
+                class="text-decoration-none text-dark"
+              >
+                bluxe@sac.com </a
+              ><br />
+              Telefone:
+              <a href="phone:34332064" class="text-decoration-none text-dark">
+                (84) 3433-2064
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
